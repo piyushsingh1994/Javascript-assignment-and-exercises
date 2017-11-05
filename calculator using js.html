@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<title>Piyush Singh</title>
+  </head>
+  <body>
+    <style>
+    body {
+      background-image: url("https://cdn.pixabay.com/photo/2014/02/16/03/35/green-266988_960_720.jpg");
+      text-align: center;
+      font-size: 20px;
+      color:white;
+    }
+    form {
+      color: white;
+      font-size: 40px;
+      text-align: left;
+    }
+    p {
+      color: white;
+      font-size: 30px;
+      text-align: left;
+    }
+    </style>
+  <h1>  SIMPLE CALCULATOR BY PIYUSH SINGH</h1>
+  <script>
+  function multiplication(number){
+    num1=document.getElementById('1st number').value;
+      num2=document.getElementById('2nd number').value;
+      document.getElementById("result").innerHTML=num1*num2;
+  }
+  function addition(number){
+    num1=document.getElementById('1st number').value;
+      num2=document.getElementById('2nd number').value;
+      document.getElementById("sum").innerHTML=num1+num2;
+        }
+        function subtraction(number){
+          num1=document.getElementById('1st number').value;
+            num2=document.getElementById('2nd number').value;
+            document.getElementById("difference").innerHTML=num1-num2;
+        }
+        function division(number){
+          num1=document.getElementById('1st number').value;
+            num2=document.getElementById('2nd number').value;
+            document.getElementById("division").innerHTML=num1/num2;
+          }
+  </script>
+  <form>
+    1st number : <input type="text" id="1st number" />
+  &nbsp;&nbsp&nbsp  2nd number : <input type="text" id="2nd number" />
+  <br><input type="button" onclick="multiplication()" value="multiply" />
+  &nbsp;&nbsp&nbsp &nbsp;&nbsp&nbsp <input type="button" onclick="addition()" value="Add" />
+    &nbsp;&nbsp&nbsp &nbsp;&nbsp&nbsp <input type="button" onclick="subtraction()" value="difference" />
+      &nbsp;&nbsp&nbsp &nbsp;&nbsp&nbsp <input type="button" onclick="division()" value="divide" />
+</form>
+<p>The product is:
+  <span id="result"></span></p>
+  <p>The sum is:
+    <span id="sum"></span></p>
+    <p>The difference is:
+      <span id="difference"></span></p>
+      <p>The division is:
+        <span id="division"></span></p>
+   </body>
+    </html>
