@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+
+<body>
+  <style>
+  body {
+    color: purple;
+    background-color: lightgreen;
+  }
+  </style>
+<h1>NAME DISPLAY</h1>
+<script>
+function display()
+{
+  var fname=document.getElementById("Fname").value;
+  
+  var lname=document.getElementById("Lname").value;
+  document.getElementById("result").innerHTML= fname+" " +lname;
+  fname.style.backgroundColor="green";
+  lname.style.backgroundColor="blue";
+}
+</script>
+First Name <input type="text" name="Fname"id='Fname' onmouseover="display()" />
+<br><br>Last Name <input type="text" name="Lname" id='Lname' onmouseover="display()" />
+<br><br> <input type="submit" value="name" onclick="display()" />
+
+<form>
+
+<p>Welcome&nbsp;:
+  <span id="result"></span></p>
+</form>
+</body>
+</html>
